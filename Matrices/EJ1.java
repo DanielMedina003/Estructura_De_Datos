@@ -37,6 +37,9 @@ public class EJ1 {
 
 
                                                     //SUMA DE MANERA MAS DIFICIL:>
+
+        //Valida si la matriz ingresada es 2*3
+        if (f == 2 && c == 3) {                                            
         for (int i = 0; i < f; i++) {
             for (int j = 0; j < c; j++) {
                 
@@ -46,14 +49,17 @@ public class EJ1 {
                 
                 if ((i == 0 && j == 1) || (i == 1 && j == 0) || (i == 1 && j == 2)) {
                     s2 += matriz[i][j];
+                   }
                 }
             }
-        }
 
         System.out.println("\nLa suma de las posiciones [0][0] ; [0][2] ; [1][1] de la matris es = " + s1);
         System.out.println("La suma de las posiciones [0][1] ; [1][0] ; [1][2] de la matris es = " + s2);
-                         
-                                                        
+
+        }else{
+            JOptionPane.showMessageDialog(null, "La matriz esta fuera del rango requerido para hacer la suma en zig-zag");
+        }
+                                                                        
     }
 
 }
