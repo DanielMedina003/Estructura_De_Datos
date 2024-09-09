@@ -2,7 +2,6 @@ import javax.swing.JOptionPane;
 
 public class EJ1 {
     public static void main(String[] args) {
-        System.out.println("h");
         
         int f = Integer.parseInt(JOptionPane.showInputDialog("Digite la cantidad de filas que desea"));
         int c = Integer.parseInt(JOptionPane.showInputDialog("Digite la cantidad de columnas que desea"));
